@@ -55,9 +55,7 @@ backtest/
 
 ---
 
-## Reproducing the Report Results
-
-### Deliverable 3 — Single Stock (AAPL)
+### Single Stock (AAPL)
 
 ```bash
 python run_backtest.py --data data/nasdaq100_daily_5y.csv --strategy equal_weight
@@ -66,7 +64,7 @@ python run_backtest.py --data data/nasdaq100_daily_5y.csv --strategy equal_weigh
 Or run all strategies on AAPL only by editing the prices slice in run_backtest.py,
 or use the pre-generated results in results/aapl/.
 
-### Deliverable 4 — Portfolio Backtesting (all 101 stocks)
+### Portfolio Backtesting (all 101 stocks)
 
 ```bash
 python run_backtest.py --strategy equal_weight
@@ -85,7 +83,7 @@ python run_backtest.py
 
 Results saved to results/deliverable4/ (pre-generated and included).
 
-### Deliverable 5 — Benchmark vs Novel Strategies
+### Benchmark vs Novel Strategies
 
 ```bash
 python run_backtest.py --strategy bench1_ma2050
@@ -142,7 +140,7 @@ python run_backtest.py [OPTIONS]
 
 ## Key Results Summary
 
-### Deliverable 4: Portfolio Backtesting
+### Portfolio Backtesting
 
 | Strategy          | Weighting     | Total Return | Sharpe | Max DD   |
 |-------------------|---------------|-------------|--------|----------|
@@ -153,7 +151,7 @@ python run_backtest.py [OPTIONS]
 | RSI Reversion     | Uniform       | +32.16%     | 0.565  | -33.05%  |
 | Vol Weighted      | Risk-adjusted | +69.06%     | 0.691  | -25.99%  |
 
-### Deliverable 5: Novel Strategies vs Benchmarks (Sharpe)
+### Novel Strategies vs Benchmarks (Sharpe)
 
 | Strategy                     | Sharpe | Beats both benchmarks? |
 |------------------------------|--------|------------------------|
